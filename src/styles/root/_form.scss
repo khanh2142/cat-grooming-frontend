@@ -1,0 +1,108 @@
+.form--container {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form--title {
+  font-size: 24px;
+  align-self: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: $background;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form--item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  width: 200px;
+  background-color: $background;
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $background;
+  font-style: italic;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.image--preview {
+  width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.submit {
+  background-color: $color;
+  border-radius: 25px;
+  width: 50%;
+  align-self: center;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $background;
+    transition: $transition;
+  }
+}
+
+.register__form--validate {
+  width: 100%;
+  color: #fff;
+  background-color: #e62856;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn--close {
+  border-style: dashed;
+  position: absolute;
+  color: #000;
+}
+
+.btn--create {
+  background-color: $color;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__control {
+  display: flex;
+  gap: 20px;
+}
+
+.form__control--item {
+  width: 300px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}

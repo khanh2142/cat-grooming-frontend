@@ -1,0 +1,80 @@
+@import "../root/variables";
+
+.productDetail__image {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &--show {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow: $color 0px 5px 15px;
+    border-radius: 5px;
+  }
+
+  &--list {
+    height: 100px;
+    width: 100%;
+  }
+}
+
+.productDetail__content {
+  &--name {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  &--desc {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &--sale {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: line-through;
+  }
+
+  &--root {
+    font-size: 30px;
+    font-weight: 800;
+    color: $price;
+  }
+
+  &--btn {
+    display: flex;
+    gap: 20px;
+
+    .productDetail__btn {
+      display: flex;
+      gap: 20px;
+      width: 200px;
+      background-color: $background;
+      padding: 10px;
+      justify-content: center;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
+
+    .btn--buy {
+      color: $price !important;
+      background-color: #fff;
+      border-color: $price;
+    }
+
+    .btn--like {
+      color: $background;
+      background-color: #fff;
+      border-color: $background;
+    }
+  }
+}

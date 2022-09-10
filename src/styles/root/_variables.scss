@@ -1,0 +1,79 @@
+// Color
+$background: #eeaeca;
+$color: #94bbe9;
+$color-faded: rgba(148, 187, 233, 0.3);
+$price: #ed3e3e;
+
+// box-shadow
+
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+// line
+
+.line {
+  width: 100%;
+  height: 10px;
+  background-color: $background;
+  display: block;
+  margin: 10px 0;
+}
+
+// transition
+
+$transition: 0.2s linear;
+
+// Slick
+
+.slick-arrow {
+  z-index: 10;
+}
+
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dots li button::before {
+  font-size: 12px;
+}
+
+.slick-arrow::before {
+  color: $color !important;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+@import "./form";
+
+//key frames
+
+@mixin key_frame($name: "fire", $duration: 333ms, $count: "") {
+  @keyframes fire {
+    0% {
+      color: transparent;
+      transform: scale(0);
+    }
+    100% {
+      color: #fff;
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $count;
+}

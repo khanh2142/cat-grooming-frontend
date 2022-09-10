@@ -1,0 +1,75 @@
+@import "../root/variables";
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: $background;
+
+  &__container {
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+    &--item {
+      display: flex;
+      flex-direction: column;
+
+      .footer__item {
+        &--title {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        &--description {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          height: 40px;
+
+          i {
+            font-size: 18px;
+            width: 20px;
+          }
+        }
+
+        &--content {
+          font-size: 16px;
+        }
+
+        &--contact {
+          display: flex;
+          gap: 10px;
+
+          .footer__contact {
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-color: #fff;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.footer__description {
+  background-color: $color;
+
+  &--container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+}

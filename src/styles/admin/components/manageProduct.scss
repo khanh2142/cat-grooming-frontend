@@ -1,0 +1,11 @@
+@import "../../root/variables";
+
+.manageProduct__item {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+
+  .input {
+    width: 300px;
+  }
+}

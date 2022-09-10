@@ -1,0 +1,137 @@
+@import "../root/variables";
+
+.register__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbb9raICFeT7UPDDf4H8vkoGEgSgzxvAAfSpJzce6vgjoEvjWGjTaZPa4_xgHOv9Fl1yo&usqp=CAU);
+}
+
+.register__form {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  &--title {
+    font-size: 24px;
+    align-self: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: $background;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &--item {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      width: 200px;
+      background-color: $background;
+      padding: 5px 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $background;
+      font-style: italic;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &--checkbox {
+    .register__checkbox--input {
+      position: relative;
+      margin-right: 10px;
+    }
+
+    .register__checkbox--icon {
+      margin-right: 10px;
+      display: none;
+    }
+  }
+
+  &--button {
+    background-color: $color;
+    border-radius: 25px;
+    width: 50%;
+    align-self: center;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $background;
+      transition: $transition;
+    }
+  }
+
+  &--forgot {
+    display: flex;
+
+    .register__forgot {
+      display: flex;
+      align-items: baseline;
+      color: #2dacd1 !important;
+      gap: 10px;
+    }
+  }
+
+  p {
+    align-self: center;
+    font-weight: 600;
+    margin: -3px 0;
+  }
+
+  &--next {
+    align-self: center;
+
+    a {
+      color: #e62856 !important;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--back {
+    background-color: #2dacd1;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: end;
+    font-weight: 600;
+    gap: 10px;
+  }
+
+  .register__form--validate {
+    width: 100%;
+    color: #fff;
+    background-color: #e62856;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
